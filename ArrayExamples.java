@@ -21,7 +21,8 @@ public class ArrayExamples {
 
   // Averages the numbers in the array (takes the mean), but leaves out the
   // lowest number when calculating. Returns 0 if there are no elements or just
-  // 1 element in the array
+  // 1 element in the array. In the special case that there is no lowest number
+  // return 0.
   static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
@@ -34,7 +35,5 @@ public class ArrayExamples {
     }
     return sum / (arr.length - 1);
   }
-
-
 }
 
