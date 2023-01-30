@@ -7,15 +7,10 @@ import org.junit.*;
 public class ArrayTests {
 	@Test 
 	public void testReverseInPlace() {
-    int[] input1 = { 3 };
+    int[] input1 = { 100 };
     ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3 }, input1);
+    assertArrayEquals(new int[]{ 100 }, input1);
 	}
-  @Test
-  public void testReversed() {
-    int[] input1 = { };
-    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
-  }
 
   @Test
   public void manualTestReverseInPlace() {
@@ -24,6 +19,12 @@ public class ArrayTests {
     assertArrayEquals(new int[] {6,5,4,3,2,1}, input2);
   }
 
+  @Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+  
   @Test
   public void manualTestReversed() {
     int[] input3 = {7,8,9,10};
